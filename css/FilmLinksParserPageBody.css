@@ -73,6 +73,7 @@ body {
 .range_slider_container > .slider_track{
     width: 100%;
     height: 5px;
+    background: #dadae5;
     position: absolute;
     margin: auto;
     top: 0;
