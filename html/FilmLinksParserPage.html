@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/SiteHeader.css">
+        <link rel="stylesheet" href="../css/FilmLinksParserPageBody.css">
+        <title>Project emotional research</title>
+    </head>
+    
+    <body>
+        <header>
+            <p id="header_title">
+                Project Emotional Research</p>
+            <div id="header_pages_list">
+                <button class="page_button" state="current_page">
+                    Парсер списка фильмов</button>
+                <button class="page_button" state="another_page">
+                    Парсер рецензий на фильмы</button>
+                <button class="page_button" state="another_page">
+                    О проекте</button>
+            </div>
+        </header>
+
+        <div id="page_content">
+            <form class="links_parsing_form">
+                <div class="filtring_indicator_div">
+                    <p>Рейтинг фильма</p>
+
+                    <div class="range_div">
+                        <div class="values">
+                            <span class="range_value">
+                                9.5
+                            </span>
+                            <span> &dash; </span>
+                            <span class="range_value">
+                                9.8
+                            </span>
+                        </div>
+                        <div class="range_slider_container">
+                            <div class="slider_track"></div>
+                            <input type="range" min="0" max="10" value="9.5" step="0.1" class="slider_component_min" oninput="slideOne()">
+                            <input type="range" min="0" max="10" value="9.8" step="0.1" class="slider_component_max" oninput="slideTwo()">
+                        </div>
+                    </div>
+
+                    <script src="../js/double_side_slider.js"></script>
+                </div>
+                <input class=".links_parsing_form_submit_button"
+                 type="submit">
+            </form>
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+  </html>

@@ -1,0 +1,36 @@
+header {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#header_title {
+    margin: 0px 0px 0px 40px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#header_pages_list {
+    display: flex;
+    flex-direction: row;
+    background-color: #d3d3d3;
+}
+
+.page_button[state=current_page] {
+    border-width: 0px 0px 0px 3px;
+    padding: 20px 20px 15px 20px;
+    font-size: 24px;
+    border-color: #757575;
+    color: white;
+    background-color: #FB404C;
+}
+
+.page_button[state=another_page] {
+    border-width: 0px 0px 0px 3px;
+    padding: 20px 20px 15px 20px;
+    font-size: 24px;
+    border-color: #757575;
+    color: white;
+    background-color: #371F6E;
+}
