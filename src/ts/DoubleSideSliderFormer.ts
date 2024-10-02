@@ -1,10 +1,5 @@
-import { DoubleSideSlider } from "./DoubleSideSlider"
-import { DoubleSideSliderDTO } from "./DoubleSideSliderDTO";
-
-document.addEventListener("load", () => {
-    slideOne();
-    slideTwo();
-});
+import { DoubleSideSlider } from "./DoubleSideSlider.js"
+import { DoubleSideSliderDTO } from "./DoubleSideSliderDTO.js";
 
 const filtringIndicators : HTMLElement[] = getAllFiltringIndicators();
 const formedDoubleSideSliders : DoubleSideSlider[] = [];
