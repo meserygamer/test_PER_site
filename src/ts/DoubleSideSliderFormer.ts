@@ -10,7 +10,7 @@ filtringIndicators.forEach(element => {
 function getAllFiltringIndicators() : HTMLElement[] {
 
     const indicatorDivs : HTMLElement[] = [];
-    document.querySelectorAll(".filtring_indicator_div")
+    document.querySelectorAll(".indicator_double_slider")
             .forEach(elem => {
                 indicatorDivs.push(<HTMLElement> elem);
             });

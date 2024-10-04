@@ -36,11 +36,11 @@ class DoubleSideSlider{
         return this.maxValue - this.minValue;
     } 
 
-    private getMinValueRangeChangedHandler() : () => any {
+    private getMinValueRangeChangedHandler() : () => void {
     
         let self : DoubleSideSlider = this;
 
-        function func() : any {
+        function func() : void {
 
             if(self.rangeDelta < 0){
 
@@ -51,11 +51,11 @@ class DoubleSideSlider{
         return func;
     }
 
-    private getMaxValueRangeChangedHandler() : () => any {
+    private getMaxValueRangeChangedHandler() : () => void {
         
         let self : DoubleSideSlider = this;
 
-        function func() : any {
+        function func() : void {
 
             if(self.rangeDelta < 0){
 
