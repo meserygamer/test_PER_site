@@ -10,9 +10,11 @@ body {
 
 .links_parsing_form {
     
+    width: 50%;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
+    gap: 30px;
 }
 
 .links_parsing_form_submit_button {
@@ -24,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    border-width: 5px;
+    border-width: 3px;
     border-style: solid;
     border-color: #371F6E;
     padding: 15px;
@@ -44,6 +46,9 @@ body {
 }
 
 .range_value {
+
+    width: 30px;
+    text-align: center;
     border-width: 2px;
     border-color: #757575;
     border-style: solid;
