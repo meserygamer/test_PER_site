@@ -22,113 +22,25 @@
         </header>
 
         <div id="page_content">
+
             <form class="links_parsing_form">
 
-                <div class="filtring_indicator_div indicator_double_slider">
-                    <p>Рейтинг фильма</p>
+                <filtring-indicator-double-side-slider indicator_title="Рейтинг фильма"></filtring-indicator-double-side-slider>
 
-                    <div class="range_div">
-                        <div class="values">
-                            <span class="range_value">
-                                9.5
-                            </span>
-                            <span> &dash; </span>
-                            <span class="range_value">
-                                9.8
-                            </span>
-                        </div>
-                        <div class="range_slider_container">
-                            <div class="slider_track"></div>
-                            <input type="range" min="0" max="10" value="9.5" step="0.1" class="slider_component_min">
-                            <input type="range" min="0" max="10" value="9.8" step="0.1" class="slider_component_max">
-                        </div>
-                    </div>
-                </div>
+                <filtring-indicator-double-side-slider indicator_title="Рейтинг на IMDB"></filtring-indicator-double-side-slider>
 
-                <div class="filtring_indicator_div indicator_double_slider">
-                    <p>Рейтинг на IMDB</p>
+                <filtring-indicator-double-side-slider indicator_title="Рейтинг кинокритиков"></filtring-indicator-double-side-slider>
+        
+                <filtring-indicator-double-side-slider indicator_title="Рейтинг положительных рецензий"></filtring-indicator-double-side-slider>
 
-                    <div class="range_div">
-                        <div class="values">
-                            <span class="range_value">
-                                9.5
-                            </span>
-                            <span> &dash; </span>
-                            <span class="range_value">
-                                9.8
-                            </span>
-                        </div>
-                        <div class="range_slider_container">
-                            <div class="slider_track"></div>
-                            <input type="range" min="0" max="10" value="9.5" step="0.1" class="slider_component_min">
-                            <input type="range" min="0" max="10" value="9.8" step="0.1" class="slider_component_max">
-                        </div>
-                    </div>
-                </div>
+                <filtring-indicator-slider indicator_title="Минимальное количество оценок"></filtring-indicator-slider>
 
-                <div class="filtring_indicator_div indicator_double_slider">
-                    <p>Рейтинг кинокритиков</p>
+                <script type="module" src="../src/js/HtmlElements/ElementsDefinitor.js"></script>
 
-                    <div class="range_div">
-                        <div class="values">
-                            <span class="range_value">
-                                9.5
-                            </span>
-                            <span> &dash; </span>
-                            <span class="range_value">
-                                9.8
-                            </span>
-                        </div>
-                        <div class="range_slider_container">
-                            <div class="slider_track"></div>
-                            <input type="range" min="0" max="10" value="9.5" step="0.1" class="slider_component_min">
-                            <input type="range" min="0" max="10" value="9.8" step="0.1" class="slider_component_max">
-                        </div>
-                    </div>
-                </div>
+                <input class="links_parsing_form_submit_button" type="submit">
 
-                <div class="filtring_indicator_div indicator_double_slider">
-                    <p>Рейтинг положительных рецензий</p>
-
-                    <div class="range_div">
-                        <div class="values">
-                            <span class="range_value">
-                                9.5
-                            </span>
-                            <span> &dash; </span>
-                            <span class="range_value">
-                                9.8
-                            </span>
-                        </div>
-                        <div class="range_slider_container">
-                            <div class="slider_track"></div>
-                            <input type="range" min="0" max="10" value="9.5" step="0.1" class="slider_component_min">
-                            <input type="range" min="0" max="10" value="9.8" step="0.1" class="slider_component_max">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="filtring_indicator_div indicator_slider">
-                    <p>Минимальное количество оценок</p>
-
-                    <div class="range_div">
-                        <div class="values">
-                            <span class="range_value">
-                                100
-                            </span>
-                        </div>
-                        <div class="range_slider_container">
-                            <div class="slider_track"></div>
-                            <input type="range" min="100" max="2500" value="100" step="5" class="slider_range">
-                        </div>
-                    </div>
-                </div>
-
-                <script type="module" src="../src/js/DoubleSideSliderFormer.js"></script>
-                <script type="module" src="../src/js/SliderFormer.js"></script>
-                <input class="links_parsing_form_submit_button"
-                 type="submit">
             </form>
+
         </div>
 
         <footer>
